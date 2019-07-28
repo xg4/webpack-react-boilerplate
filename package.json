@@ -1,0 +1,48 @@
+{
+  "name": "webpack-react-boilerplate",
+  "version": "0.0.0",
+  "description": "webpack boilerplate for react & typescript, use babel",
+  "keywords": [
+    "boilerplate",
+    "eslint",
+    "react",
+    "typescript",
+    "webpack"
+  ],
+  "homepage": "https://github.com/xg4/webpack-react-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/xg4/webpack-react-boilerplate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xg4/webpack-react-boilerplate.git"
+  },
+  "license": "MIT",
+  "author": "xg4 <xingor4@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "webpack --progress --colors --mode=production",
+    "start": "webpack-dev-server --config webpack.config.js --progress --colors --open --mode=development"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/react": "^16.9.1",
+    "@types/react-dom": "^16.8.5",
+    "babel-loader": "^8.0.6",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
